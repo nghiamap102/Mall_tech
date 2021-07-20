@@ -27,7 +27,7 @@
 }
 
 [data-theme="dark"] {
-    --bg-color: black;
+    --bg-color: rgb(32, 31, 31);
     --bg-carousel: rgb(139, 135, 135);
     --bg-slide: grey;
     --banner-1: url(../images/banner1-dark.png) no-repeat center;
