@@ -574,8 +574,6 @@ label {
     align-items: center;
 }
 
-.item-checkbox:hover input {}
-
 .item-checkbox label {
     margin: 0px 10px;
 }
@@ -799,8 +797,6 @@ label {
 .footer {
     background: rgb(73, 152, 204);
 }
-
-.footer .form-group i {}
 
 .footer-grids li {
     list-style: none;
