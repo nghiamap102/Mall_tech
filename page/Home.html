@@ -1,0 +1,2427 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no" />
+    <title>Mall Technology</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/reponsive.css ">
+    <!-- <link rel="stylesheet" href="../css/test.css "> -->
+
+    <!-- -----------------Font awesome -------------- -->
+    <link rel="stylesheet" href="../bootstrap/fontawesome-free-5.15.3-web/css/all.min.css">
+    <!-- ------------------bootstrap------------------------ -->
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-top">
+        <div class="container">
+            <div class="row py-2">
+
+                <div class="col-lg-3 col-sm-3 logo">
+                    <p>WELCOME TO OUR SHOP!</p>
+                </div>
+                <div class="col-lg-9 col-sm-9 dialog-option">
+                    <ul class="main-top-list">
+                        <li>
+                            <a href="#small-dialog-location" class="popup-with-zoom-anim">
+                                <span class="material-icons-outlined">
+                                    location_on
+                                </span>Select Location
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#login" class="" data-target="#login" data-toggle="modal">
+                                <span class="material-icons-outlined">
+                                    login
+                                </span>Log In
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="" data-toggle="modal" data-target="#register">
+                                <span class="material-icons-outlined">
+                                    logout
+                                </span>Register
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="small-dialog-location" class="mfp-hide">
+        <div class="select-city">
+            <h3>
+                <span class="material-icons-outlined">
+                    add_location
+                </span>Please Select Your Location
+            </h3>
+            <select class="list_of_cities">
+				<optgroup label="Popular Cities">
+					<option selected style="display:none;color:#eee;">Select City</option>
+					<option>Birmingham</option>
+					<option>Anchorage</option>
+					<option>Phoenix</option>
+					<option>Little Rock</option>
+					<option>Los Angeles</option>
+					<option>Denver</option>
+					<option>Bridgeport</option>
+					<option>Wilmington</option>
+					<option>Jacksonville</option>
+					<option>Atlanta</option>
+					<option>Honolulu</option>
+					<option>Boise</option>
+					<option>Chicago</option>
+					<option>Indianapolis</option>
+				</optgroup>
+				<optgroup label="Alabama">
+					<option>Birmingham</option>
+					<option>Montgomery</option>
+					<option>Mobile</option>
+					<option>Huntsville</option>
+					<option>Tuscaloosa</option>
+				</optgroup>
+				<optgroup label="Alaska">
+					<option>Anchorage</option>
+					<option>Fairbanks</option>
+					<option>Juneau</option>
+					<option>Sitka</option>
+					<option>Ketchikan</option>
+				</optgroup>
+				<optgroup label="Arizona">
+					<option>Phoenix</option>
+					<option>Tucson</option>
+					<option>Mesa</option>
+					<option>Chandler</option>
+					<option>Glendale</option>
+				</optgroup>
+				<optgroup label="Arkansas">
+					<option>Little Rock</option>
+					<option>Fort Smith</option>
+					<option>Fayetteville</option>
+					<option>Springdale</option>
+					<option>Jonesboro</option>
+				</optgroup>
+				<optgroup label="California">
+					<option>Los Angeles</option>
+					<option>San Diego</option>
+					<option>San Jose</option>
+					<option>San Francisco</option>
+					<option>Fresno</option>
+				</optgroup>
+				<optgroup label="Colorado">
+					<option>Denver</option>
+					<option>Colorado</option>
+					<option>Aurora</option>
+					<option>Fort Collins</option>
+					<option>Lakewood</option>
+				</optgroup>
+				<optgroup label="Connecticut">
+					<option>Bridgeport</option>
+					<option>New Haven</option>
+					<option>Hartford</option>
+					<option>Stamford</option>
+					<option>Waterbury</option>
+				</optgroup>
+				<optgroup label="Delaware">
+					<option>Wilmington</option>
+					<option>Dover</option>
+					<option>Newark</option>
+					<option>Bear</option>
+					<option>Middletown</option>
+				</optgroup>
+				<optgroup label="Florida">
+					<option>Jacksonville</option>
+					<option>Miami</option>
+					<option>Tampa</option>
+					<option>St. Petersburg</option>
+					<option>Orlando</option>
+				</optgroup>
+				<optgroup label="Georgia">
+					<option>Atlanta</option>
+					<option>Augusta</option>
+					<option>Columbus</option>
+					<option>Savannah</option>
+					<option>Athens</option>
+				</optgroup>
+				<optgroup label="Hawaii">
+					<option>Honolulu</option>
+					<option>Pearl City</option>
+					<option>Hilo</option>
+					<option>Kailua</option>
+					<option>Waipahu</option>
+				</optgroup>
+				<optgroup label="Idaho">
+					<option>Boise</option>
+					<option>Nampa</option>
+					<option>Meridian</option>
+					<option>Idaho Falls</option>
+					<option>Pocatello</option>
+				</optgroup>
+				<optgroup label="Illinois">
+					<option>Chicago</option>
+					<option>Aurora</option>
+					<option>Rockford</option>
+					<option>Joliet</option>
+					<option>Naperville</option>
+				</optgroup>
+				<optgroup label="Indiana">
+					<option>Indianapolis</option>
+					<option>Fort Wayne</option>
+					<option>Evansville</option>
+					<option>South Bend</option>
+					<option>Hammond</option>
+				</optgroup>
+				<optgroup label="Iowa">
+					<option>Des Moines</option>
+					<option>Cedar Rapids</option>
+					<option>Davenport</option>
+					<option>Sioux City</option>
+					<option>Waterloo</option>
+				</optgroup>
+				<optgroup label="Kansas">
+					<option>Wichita</option>
+					<option>Overland Park</option>
+					<option>Kansas City</option>
+					<option>Topeka</option>
+					<option>Olathe </option>
+				</optgroup>
+				<optgroup label="Kentucky">
+					<option>Louisville</option>
+					<option>Lexington</option>
+					<option>Bowling Green</option>
+					<option>Owensboro</option>
+					<option>Covington</option>
+				</optgroup>
+				<optgroup label="Louisiana">
+					<option>New Orleans</option>
+					<option>Baton Rouge</option>
+					<option>Shreveport</option>
+					<option>Metairie</option>
+					<option>Lafayette</option>
+				</optgroup>
+				<optgroup label="Maine">
+					<option>Portland</option>
+					<option>Lewiston</option>
+					<option>Bangor</option>
+					<option>South Portland</option>
+					<option>Auburn</option>
+				</optgroup>
+				<optgroup label="Maryland">
+					<option>Baltimore</option>
+					<option>Frederick</option>
+					<option>Rockville</option>
+					<option>Gaithersburg</option>
+					<option>Bowie</option>
+				</optgroup>
+				<optgroup label="Massachusetts">
+					<option>Boston</option>
+					<option>Worcester</option>
+					<option>Springfield</option>
+					<option>Lowell</option>
+					<option>Cambridge</option>
+				</optgroup>
+				<optgroup label="Michigan">
+					<option>Detroit</option>
+					<option>Grand Rapids</option>
+					<option>Warren</option>
+					<option>Sterling Heights</option>
+					<option>Lansing</option>
+				</optgroup>
+				<optgroup label="Minnesota">
+					<option>Minneapolis</option>
+					<option>St. Paul</option>
+					<option>Rochester</option>
+					<option>Duluth</option>
+					<option>Bloomington</option>
+				</optgroup>
+				<optgroup label="Mississippi">
+					<option>Jackson</option>
+					<option>Gulfport</option>
+					<option>Southaven</option>
+					<option>Hattiesburg</option>
+					<option>Biloxi</option>
+				</optgroup>
+				<optgroup label="Missouri">
+					<option>Kansas City</option>
+					<option>St. Louis</option>
+					<option>Springfield</option>
+					<option>Independence</option>
+					<option>Columbia</option>
+				</optgroup>
+				<optgroup label="Montana">
+					<option>Billings</option>
+					<option>Missoula</option>
+					<option>Great Falls</option>
+					<option>Bozeman</option>
+					<option>Butte-Silver Bow</option>
+				</optgroup>
+				<optgroup label="Nebraska">
+					<option>Omaha</option>
+					<option>Lincoln</option>
+					<option>Bellevue</option>
+					<option>Grand Island</option>
+					<option>Kearney</option>
+				</optgroup>
+				<optgroup label="Nevada">
+					<option>Las Vegas</option>
+					<option>Henderson</option>
+					<option>North Las Vegas</option>
+					<option>Reno</option>
+					<option>Sunrise Manor</option>
+				</optgroup>
+				<optgroup label="New Hampshire">
+					<option>Manchesters</option>
+					<option>Nashua</option>
+					<option>Concord</option>
+					<option>Dover</option>
+					<option>Rochester</option>
+				</optgroup>
+				<optgroup label="New Jersey">
+					<option>Newark</option>
+					<option>Jersey City</option>
+					<option>Paterson</option>
+					<option>Elizabeth</option>
+					<option>Edison</option>
+				</optgroup>
+				<optgroup label="New Mexico">
+					<option>Albuquerque</option>
+					<option>Las Cruces</option>
+					<option>Rio Rancho</option>
+					<option>Santa Fe</option>
+					<option>Roswell</option>
+				</optgroup>
+				<optgroup label="New York">
+					<option>New York</option>
+					<option>Buffalo</option>
+					<option>Rochester</option>
+					<option>Yonkers</option>
+					<option>Syracuse</option>
+				</optgroup>
+				<optgroup label="North Carolina">
+					<option>Charlotte</option>
+					<option>Raleigh</option>
+					<option>Greensboro</option>
+					<option>Winston-Salem</option>
+					<option>Durham</option>
+				</optgroup>
+				<optgroup label="North Dakota">
+					<option>Fargo</option>
+					<option>Bismarck</option>
+					<option>Grand Forks</option>
+					<option>Minot</option>
+					<option>West Fargo</option>
+				</optgroup>
+				<optgroup label="Ohio">
+					<option>Columbus</option>
+					<option>Cleveland</option>
+					<option>Cincinnati</option>
+					<option>Toledo</option>
+					<option>Akron</option>
+				</optgroup>
+				<optgroup label="Oklahoma">
+					<option>Oklahoma City</option>
+					<option>Tulsa</option>
+					<option>Norman</option>
+					<option>Broken Arrow</option>
+					<option>Lawton</option>
+				</optgroup>
+				<optgroup label="Oregon">
+					<option>Portland</option>
+					<option>Eugene</option>
+					<option>Salem</option>
+					<option>Gresham</option>
+					<option>Hillsboro</option>
+				</optgroup>
+				<optgroup label="Pennsylvania">
+					<option>Philadelphia</option>
+					<option>Pittsburgh</option>
+					<option>Allentown</option>
+					<option>Erie</option>
+					<option>Reading</option>
+				</optgroup>
+				<optgroup label="Rhode Island">
+					<option>Providence</option>
+					<option>Warwick</option>
+					<option>Cranston</option>
+					<option>Pawtucket</option>
+					<option>East Providence</option>
+				</optgroup>
+				<optgroup label="South Carolina">
+					<option>Columbia</option>
+					<option>Charleston</option>
+					<option>North Charleston</option>
+					<option>Mount Pleasant</option>
+					<option>Rock Hill</option>
+				</optgroup>
+				<optgroup label="South Dakota">
+					<option>Sioux Falls</option>
+					<option>Rapid City</option>
+					<option>Aberdeen</option>
+					<option>Brookings</option>
+					<option>Watertown</option>
+				</optgroup>
+				<optgroup label="Tennessee">
+					<option>Memphis</option>
+					<option>Nashville</option>
+					<option>Knoxville</option>
+					<option>Chattanooga</option>
+					<option>Clarksville</option>
+				</optgroup>
+				<optgroup label="Texas">
+					<option>Houston</option>
+					<option>San Antonio</option>
+					<option>Dallas</option>
+					<option>Austin</option>
+					<option>Fort Worth</option>
+				</optgroup>
+				<optgroup label="Utah">
+					<option>Salt Lake City</option>
+					<option>West Valley City</option>
+					<option>Provo</option>
+					<option>West Jordan</option>
+					<option>Orem</option>
+				</optgroup>
+				<optgroup label="Vermont">
+					<option>Burlington</option>
+					<option>Essex</option>
+					<option>South Burlington</option>
+					<option>Colchester</option>
+					<option>Rutland</option>
+				</optgroup>
+				<optgroup label="Virginia">
+					<option>Virginia Beach</option>
+					<option>Norfolk</option>
+					<option>Chesapeake</option>
+					<option>Arlington</option>
+					<option>Richmond</option>
+				</optgroup>
+				<optgroup label="Washington">
+					<option>Seattle</option>
+					<option>Spokane</option>
+					<option>Tacoma</option>
+					<option>Vancouver</option>
+					<option>Bellevue</option>
+				</optgroup>
+				<optgroup label="West Virginia">
+					<option>Charleston</option>
+					<option>Huntington</option>
+					<option>Parkersburg</option>
+					<option>Morgantown</option>
+					<option>Wheeling</option>
+				</optgroup>
+				<optgroup label="Wisconsin">
+					<option>Milwaukee</option>
+					<option>Madison</option>
+					<option>Green Bay</option>
+					<option>Kenosha</option>
+					<option>Racine</option>
+				</optgroup>
+				<optgroup label="Wyoming">
+					<option>Cheyenne</option>
+					<option>Casper</option>
+					<option>Laramie</option>
+					<option>Gillette</option>
+					<option>Rock Springs</option>
+				</optgroup>
+			</select>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" style="display: none;" aria-expanded="false" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Log In</h5>
+                </div>
+
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <div class="icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+
+                            <div class="input-place">
+                                <input name="username" placeholder="Username" class="form-control" type="text" required="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="icon">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <div class="input-place">
+                                <input id="input-password" type="password" placeholder="Password" name="password" class="form-control" required="" />
+                            </div>
+                            <div class="eye" onclick="eyepassword()">
+                                <span>
+                                    <i class="fa fa-eye-slash" id="eye-close"></i>
+                                    <i class="fa fa-eye" id="eye-open"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="btn-login">
+                            <input type="submit" class="form-control" value="Give Me One Click"></input>
+                        </div>
+                        <div class="remember">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                <label class="custom-control-label" for="customControlAutosizing">Remember me?</label>
+                            </div>
+                        </div>
+                        <div class="link-register">
+                            <p>Don't have an account?</p>
+                            <p>
+                                <a href="#" data-target="#register" data-toggle="modal">Register Now</a>
+                            </p>
+                        </div>
+                        <p class="text-center">(Or)</p>
+                        <div class="icon-social-network">
+                            <ul class="list-icon">
+                                <li>
+                                    <a href="#" class="fb">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="twt">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gg">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" style="display: none;" aria-expanded="false" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5>Register</h5>
+                </div>
+
+                <div class="modal-body">
+                    <form method="post" action="#">
+                        <div class="form-group">
+                            <div class="icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+
+                            <div class="input-place">
+                                <input name="name" placeholder="Your Name" class="form-control" type="text" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="icon">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="input-place">
+                                <input name="email" placeholder="Email" class="form-control" type="email" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="icon">
+                                <i class="fa fa-lock"></i>
+                            </div>
+
+                            <div class="input-place">
+                                <input name="passsword" id="password" placeholder="PassWord" class="form-control" type="password" required="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="icon">
+                                <i class="fa fa-check-circle"></i>
+                            </div>
+
+                            <div class="input-place">
+                                <input name="confirm-password" id="confirm-password" placeholder="Confirm Password" class="form-control" type="password" required="" />
+                            </div>
+                        </div>
+                        <div class="btn-login">
+                            <input type="submit" class="form-control" value="Give Me One Click"></input>
+                        </div>
+                        <div class="remember">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing2">
+                                <label class="custom-control-label" for="customControlAutosizing2">I Accept to the Terms & Conditions</label>
+                            </div>
+                        </div>
+                        <div class="link-register">
+                            <p>Don't have an account?</p>
+                            <p>
+                                <a href="#" data-target="#register" data-toggle="modal">Register Now</a>
+                            </p>
+                        </div>
+                        <p class="text-center">(Or)</p>
+                        <div class="icon-social-network">
+                            <ul class="list-icon">
+                                <li>
+                                    <a href="#" class="fb">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="twt">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gg">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bot py-3">
+        <div class="container">
+            <div class="row main-row text-center">
+
+                <div class="col-lg-3">
+                    <h1 class="home-keyword">
+                        <a href="index.html">
+                            <span>E</span>lectronics
+                            <span>M</span>art
+                        </a>
+                    </h1>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="row row-sub ">
+                        <div class="col-lg-9 col-md-9 col-sm-8 left">
+                            <form class="form-inline" method="post" action="#">
+                                <input type="search" placeholder="Search for products, brands and more" />
+                                <button class="btn" type="submit">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-4 ml-sm-auto mr-sm-auto right">
+                            <div class="cont-ser-position">
+                                <nav class="navigation">
+                                    <div class="theme-switch-wrapper">
+                                        <label class="theme-switch" for="checkbox">
+                                            <input type="checkbox" id="checkbox">
+                                            <div class="mode-container">
+                                                <i  id="sun" class="material-icons" >
+                                                    light_mode
+                                                </i>
+                                                <i  id="moon" class="material-icons-outlined"  >
+                                                    dark_mode
+                                                </i>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <div id="like" class="like">
+                                <a href="#">
+                                    <span class="material-icons-outlined">
+                                        favorite_border
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="src-header-cart-wrapper">
+                                <div class="popover-dialog">
+                                    <!-- <div class="start-popup-target" role="button" aria-describedby="start-popup">
+                                        <div class="cart-icon">
+                                            <a class="src-cart" href="cart.html">
+                                                <span class="material-icons-outlined">
+                                                    shopping_cart
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="cd-cart js-cd-cart cd-cart--empty">
+                                        <a href="#0" class="cd-cart__trigger text-replace">
+                                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg> -->
+                                            <ul class="cd-cart__count">
+                                                <!-- cart items count -->
+                                                <li>0</li>
+                                                <li>0</li>
+                                            </ul>
+                                            <!-- .cd-cart__count -->
+                                        </a>
+                                        <div class="cd-cart__content">
+                                            <div class="cd-cart__layout">
+                                                <header class="cd-cart__header">
+                                                    <h6>Cart</h6>
+                                                    <span class="cd-cart__undo">
+                                                        Item Removed 
+                                                        <a href="#0" class="">Undo</a>
+                                                    </span>
+                                                </header>
+                                                <div class="cd-cart__body">
+                                                    <ul>
+
+                                                    </ul>
+                                                </div>
+                                                <footer class="cd-cart__footer">
+                                                    <div class="">
+                                                        <a href="#0" class="cd-cart__checkout">
+                                                            Checkout - $<span>0.00</span>
+                                                            <svg class="icon--sm" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg> 
+                                                        </a>
+                                                    </div>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-inner  py-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="navi-search">
+                    <form class="form-category" method="post" action="#">
+                        <select id="" name="">
+                            <option value="">All Categories</option>
+							<option value="Televisions">Televisions</option>
+							<option value="Headphones">Headphones</option>
+							<option value="Computers">Computers</option>
+							<option value="Appliances">Appliances</option>
+							<option value="Mobiles">Mobiles</option>
+							<option value="Tv &amp; Video">Tv &amp; Video</option>
+							<option value="IPad & Tablets">IPad & Tablets</option>
+							<option value="Cameras & Camcorders">Cameras & Camcorders</option>
+							<option value="Home Audio & Theater">Home Audio & Theater</option>
+                        </select>
+                    </form>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center ml-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronics</a>
+                            <div class="dropdown-menu fade-up">
+                                <div class="dropdown-menu-option">
+                                    <h5 class="">
+                                        Mobiles, Computers
+                                    </h5>
+                                    <div class="row text-left">
+
+                                        <div class="col-sm-6">
+                                            <ul class="multi-option-dropdown">
+                                                <li>
+                                                    <a href="#">All Mobile Phones</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">All Mobile Accessories</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Cases & Covers</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Screen Protectors</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Power Banks</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">All Certified Refurbished</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tablets</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wearable Devices</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <ul class="multi-option-dropdown">
+                                                <li>
+                                                    <a href="#">Laptops</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Drives & Storage</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Printers & Ink</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Networking Devices</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Computer Accessories</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Game Zone</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Software</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Smart Home</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">APPLIANCES</a>
+                            <div class="dropdown-menu fade-up">
+                                <div class="dropdown-menu-option">
+                                    <h5 class="">
+                                        TV, Appliances, Electronics
+                                    </h5>
+                                    <div class="row text-left">
+                                        <div class="col-sm-6">
+                                            <ul class="multi-option-dropdown">
+                                                <li>
+                                                    <a href="#">Televisions</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Home Entertainment Systems</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Headphones</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Speakers</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">MP3, Media Players & Accessories</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Audio & Video Accessories</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Cameras</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">DSLR Cameras</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Camera Accessories</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <ul class="multi-option-dropdown">
+                                                <li>
+                                                    <a href="#">Musical Instruments</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Gaming Consoles</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">All Electronics</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Air Conditioners</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Refrigerators</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Washing Machines</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Kitchen & Home Appliances</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Heating & Cooling Appliances</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">All Appliances</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ABOUT US</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">NEW ARRIVALS</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">pages</a>
+                            <div class="dropdown-menu blog fade-up">
+                                <ul class="multi-option-dropdown ">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Blog Posts</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Blog Single</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Product 1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Product 2</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Single Product 1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Single Product 2</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Checkout Page</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Payment Page</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Terms of use</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide py-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner ">
+            <div class="carousel-item item1 active py-5">
+                <div class="banner d-flex align-items-center">
+                    <div class="container py-5 px-5">
+                        <div class="container-inner">
+                            <div class="carousel-caption-banner" style="max-width:500px">
+                                <p>Get up to
+                                    <span>10%</span> Cashback
+                                </p>
+                                <h3>EXCITING DEALS ON TELEVISIONS</h3>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item item2 py-5">
+                <div class="banner d-flex align-items-center">
+                    <div class="container py-5">
+                        <div class="container-inner">
+                            <div class="carousel-caption-banner">
+                                <p>Get up to <span>10%</span> Cashback</p>
+                                <h3>EXCITING DEALS ON TELEVISIONS</h3>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item item3 py-5">
+                <div class="banner d-flex align-items-center">
+                    <div class="container py-5">
+                        <div class="container-inner">
+                            <div class="carousel-caption-banner">
+                                <p>Get up to <span>10%</span> Cashback</p>
+                                <h3>EXCITING DEALS ON TELEVISIONS</h3>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item item4 py-5">
+                <div class="banner d-flex align-items-center">
+                    <div class="container py-5">
+                        <div class="container-inner">
+                            <div class="carousel-caption-banner" style="max-width:500px">
+                                <p>Get up to <span>10%</span> Cashback</p>
+                                <h3>EXCITING DEALS ON TELEVISIONS</h3>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+    <div class="list-product py-5">
+        <div class="container py-4">
+            <h3 style="text-align: center;" class="mb-5">
+                Our <span>New products</span>
+            </h3>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 order-lg-first pl-lg-3 text-left">
+                    <h6>CUSTOMER REVIEW</h6>
+                    <div class="list-star">
+                        <ul class="">
+                            <li class="five-start-option">
+                                <a href="#">
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="five-start">
+                                        5.0
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="four-start-option">
+                                <a href="#">
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="four-start">
+                                        4.0
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="haft-three-start-option">
+                                <a href="#">
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star_half
+                                    </span>
+                                    <span class="haft-three-start">
+                                        3.5
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="three-start-option">
+                                <a href="#">
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="three-start">
+                                        3.0
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="haft-three-start-option">
+                                <a href="#">
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star
+                                    </span>
+                                    <span class="material-icons-outlined">
+                                        star_half
+                                    </span>
+                                    <span class="haft-three-start">
+                                        2.5
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="list-price my-4">
+                        <h6>PRICE</h6>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Under $1,000
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    $1,000 - $5,000
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    $5,000 - $10,000    
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    $10,000 - $20,000   
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    $20,000 $30,000
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Over $30,000
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="list-discout my-4">
+                        <h6>DISCOUNT</h6>
+                        <div class="folding-item">
+                            <div class="item-filter">
+                                <div class="item1-filter-wrapper">
+                                    <div class="item-checkbox">
+                                        <input id="5%" type="checkbox" class="checked">
+                                        <label for="5%" class="">5% or More</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-filter">
+                                <div class="item1-filter-wrapper">
+                                    <div class="item-checkbox">
+                                        <input id="10%" type="checkbox" class="checked">
+                                        <label for="10%" class="">10% or More</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-filter">
+                                <div class="item1-filter-wrapper">
+                                    <div class="item-checkbox">
+                                        <input id="20%" type="checkbox" class="checked">
+                                        <label for="20%" class="">20% or More</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-filter">
+                                <div class="item1-filter-wrapper">
+                                    <div class="item-checkbox">
+                                        <input id="30%" type="checkbox" class="checked">
+                                        <label for="30%" class="">30% or More</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-filter">
+                                <div class="item1-filter-wrapper">
+                                    <div class="item-checkbox">
+                                        <input id="50%" type="checkbox" class="checked">
+                                        <label for="50%" class="">50% or More</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-filter">
+                                <div class="item1-filter-wrapper">
+                                    <div class="item-checkbox">
+                                        <input id="60%" type="checkbox" class="checked">
+                                        <label for="60%" class="">60% or More</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category my-4">
+                        <h6>ELECTRONICS</h6>
+                        <ul>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Accessories</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Cameras & Photography</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Car & Vehicle Electronics</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Computers & Accessories</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>GPS & Accessories</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Headphones</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Home Audio</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Home Theater, TV & Video</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Mobiles & Accessories</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Portable Media Players</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Tablets</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Telephones & Accessories</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Wearable Technology</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="payment-methods my-4">
+                        <h6>CASH ON DELIVERY</h6>
+                        <ul>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Eligible for Cash On Delivery</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Wallet Aipay</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Visa</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Internet Banking</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="new-arrivals my-4 ">
+                        <h6>NEW ARRIVALS</h6>
+                        <ul>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Last 7 Days</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Last 15 Days</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" /><span>Last 30 Days</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="exclusive mt-4">
+                        <h6>EXCLUSIVELY FOR YOU</h6>
+                        <div class="box-scroll">
+                            <div class="scroll">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="../images/k3.png">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="#">boAt Rockerz 450 Bluetooth Headset (Luscious Black, On the Ear)</a>
+                                        <a href="#">$1,199.00</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="../images/k2.png">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="#">Samsung 192 L Direct Cool Single Door 3 Star (2021)Refrigerator</a>
+                                        <a href="#">$12,499.00</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="../images/k1.png">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="#">Samsung Galaxy F62 (Laser Grey, 128 GB) (6 GB RAM)</a>
+                                        <a href="#">$12,990.00</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-9 col-md-9  order-lg-last text-center">
+                    <div class="product-box">
+                        <div class="product-section1">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img text-center">
+                                            <img src="../images/m1.png" alt="moblie" />
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#abc" class="name-product">Redmi 9 Prime</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span class="price">$200.00</span>
+                                                    <del class="discount">$280.00</del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="25.99">Add To Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img text-center">
+                                            <img src="../images/m2.png" alt="moblie" />
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#">Refrigerator</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span>$230.00</span>
+                                                    <del>$250.00</del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <form class="" method="post" action="#">
+                                                    <fieldset>
+                                                        <input type="submit" value="ADD TO CART" class="btn btn-primary" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img text-center">
+                                            <img src="../images/m3.png" alt="moblie" />
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#">Apple iPhone 11</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span>$280.00</span>
+                                                    <del>$300.00</del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <form class="" method="post" action="#">
+                                                    <fieldset>
+                                                        <input type="submit" value="ADD TO CART" class="btn btn-primary" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img mt-lg-0 mt-md-5 mt-sm-5 text-center">
+                                            <div class="image-box">
+                                                <img src="../images/m4.png" alt="moblie" />
+                                            </div>
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail ">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content ">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#">Mi 4A Horizon</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span>$320.00</span>
+                                                    <del>$340.00</del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <form class="form-cart" method="post" action="#">
+                                                    <fieldset>
+                                                        <input type="submit" value="ADD TO CART" class="btn btn-primary" />
+                                                        <input type="hidden" name="name" value="Mi 4A Horizon">
+                                                        <input type="hidden" name="count" value="1">
+                                                        <input type="hidden" name="discount" value="2.00">
+                                                        <input type="hidden" name="amount" value="200.00">
+                                                        <input type="hidden" name="currency" value="USD">
+                                                        <input type="hidden">
+                                                    </fieldset>
+                                                </form>
+                                                <form class="form-like" method="post" action="#">
+                                                    <label class="" for="like">
+                                                        <input type="checkbox" id="like" class="like-input">
+                                                        <!-- <input type="text" name="" id="">
+                                                        <input type="text" name="" id="">
+                                                        <input type="text" name="" id="">
+                                                        <input type="text" name="" id=""> -->
+                                                        <span class="material-icons-outlined">
+                                                         favorite_border
+                                                         </span>
+                                                    </label>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img text-center">
+                                            <div class="image-box">
+                                                <img src="../images/m5.png" alt="moblie" />
+                                            </div>
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#">Microwave Oven</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span>$249.00</span>
+                                                    <del>$300.00
+                                                    </del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <form class="" method="post" action="#">
+                                                    <fieldset>
+                                                        <input type="submit" value="ADD TO CART" class="btn btn-primary" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img text-center">
+                                            <div class="image-box">
+                                                <img src="../images/m6.png" alt="moblie" />
+                                            </div>
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#">Smart AC with Wi-fi</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span>$349.00</span>
+                                                    <del>$399.00</del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <form class="" method="post" action="#">
+                                                    <fieldset>
+                                                        <input type="submit" value="ADD TO CART" class="btn btn-primary" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="banner-ads mt-5 px-3">
+                            <div class="banner-wrapper">
+                                <div class="banner-content">
+                                    <h3>Exciting Deals</h3>
+                                    <h6>Up to 40% Off</h6>
+                                    <div class="banner-img">
+                                        <img src="../images/image1.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-section1 pt-3">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img text-center">
+                                            <img src="../images/m7.png" alt="moblie" />
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail ">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content mt-sm-4">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#">Desert Air Cooler</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span>$230.00</span>
+                                                    <del>$280.00</del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <form class="" method="post" action="#">
+                                                    <fieldset>
+                                                        <input type="submit" value="ADD TO CART" class="btn btn-primary" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img text-center">
+                                            <img src="../images/m8.png" alt="moblie" />
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#">Auto Washing Machine</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span>$180.00</span>
+                                                    <del>$200.00</del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <form class="" method="post" action="#">
+                                                    <fieldset>
+                                                        <input type="submit" value="ADD TO CART" class="btn btn-primary" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img text-center">
+                                            <img src="../images/m9.png" alt="moblie" />
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#">Water Purifier</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span>$199.00</span>
+                                                    <del>$299.00</del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <form class="" method="post" action="#">
+                                                    <fieldset>
+                                                        <input type="submit" value="ADD TO CART" class="btn btn-primary" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img mt-lg-0 mt-md-5 mt-sm-5 text-center">
+                                            <div class="image-box ">
+                                                <img src="../images/mk7.png" alt="moblie" />
+                                            </div>
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail ">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#">Panasonic Tab 8</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span>$499.00</span>
+                                                    <del>$599.00</del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <form class="" method="post" action="#">
+                                                    <fieldset>
+                                                        <input type="submit" value="ADD TO CART" class="btn btn-primary" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img text-center">
+                                            <div class="image-box">
+                                                <img src="../images/mk8.png" alt="moblie" />
+                                            </div>
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#">Lenovo Yoga Tab</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span>$599.00</span>
+                                                    <del>$699.00</del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <form class="" method="post" action="#">
+                                                    <fieldset>
+                                                        <input type="submit" value="ADD TO CART" class="btn btn-primary" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-inner">
+                                        <div class="box-img text-center">
+                                            <div class="image-box">
+                                                <img src="../images/mk9.png" alt="moblie" />
+                                            </div>
+                                            <div class="box-detail">
+                                                <div class="product-detail">
+                                                    <a href="#" class="btn-detail">Quick View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="name-product">
+                                                <h4>
+                                                    <a href="#">Samsung Galaxy Tab</a>
+                                                </h4>
+                                                <div class="price-detail">
+                                                    <span>$699.00</span>
+                                                    <del>$899.00</del>
+                                                </div>
+                                            </div>
+                                            <div class="cart-wrapper">
+                                                <form class="" method="post" action="#">
+                                                    <fieldset>
+                                                        <input type="submit" value="ADD TO CART" class="btn btn-primary">
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="recommend py-5">
+        <div class="container py-3 px-4">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 p-3">
+                    <a href="#">
+                        <div class="product1">
+                            <div class="row">
+                                <div class="col-lg-7 text-center">
+                                    <p>New Collections, New Trendy</p>
+                                    <h4>Smart Watches</h4>
+                                    <p>Sale up to 25% off all in store</p>
+                                </div>
+                                <div class="col-lg-5 col-sm-12 text-center">
+                                    <img src="../images/off1.png" alt="watch" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-sm-6 p-3">
+                    <a href="#">
+                        <div class="product1">
+                            <div class="row">
+                                <div class="col-lg-7 text-center">
+                                    <p>New Collections, New Trendy</p>
+                                    <h4>Smart Watches</h4>
+                                    <p>Sale up to 25% off all in store</p>
+                                </div>
+                                <div class="col-lg-5 col-sm-12 text-center">
+                                    <img src="../images/off2.png" alt="watch" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services py-5">
+        <div class="container py-2">
+            <div class="servivces-wrapper">
+                <div class="services-heading pl-lg-5">
+                    <h4>Electronics:</h4>
+                    <p>If you're considering a new laptop, looking for a powerful new car stereo or shopping for a new HDTV, we make it easy to find exactly what you need at a price you can afford. We offer Every Day Low Prices on TVs, laptops, cell phones,
+                        tablets and iPads, video games, desktop computers, cameras and camcorders, audio, video and more.
+                    </p>
+                </div>
+                <div class="services-content">
+                    <div class="row py-3">
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="col-inner d-flex align-items-center">
+                                <i class="fas fa-dolly"></i>
+                                <div class="">
+                                    <h4>Free Shipping</h4>
+                                    <p>on orders over $100</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="col-inner d-flex align-items-center">
+                                <i class="fas fa-shipping-fast"></i>
+                                <div class="">
+                                    <h4>Fast Delivery</h4>
+                                    <p>World Wide</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="col-inner d-flex align-items-center">
+                                <i class="far fa-thumbs-up"></i>
+                                <div class="">
+                                    <h4>Big Choice</h4>
+                                    <p>of Products</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row footer-info ">
+                <div class="col-lg-3 col-sm-6 left-side footer-grids ">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Mobiles</a>
+                        </li>
+                        <li>
+                            <a href="#">Computers</a>
+                        </li>
+                        <li>
+                            <a href="#">TV, Audio</a>
+                        </li>
+                        <li>
+                            <a href="#">Washing Machines</a>
+                        </li>
+                        <li>
+                            <a href="#">Refrigerators</a>
+                        </li>
+                        <li>
+                            <a href="#">Smartphones</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 left-side footer-grids">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                        <li>
+                            <a href="#">Faqs</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 footer-grids">
+                    <h3>Get in Touch</h3>
+                    <ul>
+                        <li>
+                            <span class="material-icons-outlined">
+                                place
+                            </span>
+                            <p>Mkc, 123 Sebastian, USA.</p>
+                        </li>
+                        <li>
+                            <span class="material-icons-outlined">
+                                phone_iphone
+                            </span>
+                            <p>Mkc, 123 Sebastian, USA.</p>
+                        </li>
+                        <li>
+                            <span class="material-icons-outlined">
+                                phone_in_talk
+                                </span>
+                            <p>Mkc, 123 Sebastian, USA.</p>
+                        </li>
+                        <li>
+                            <span class="material-icons-outlined">
+                                drafts
+                                </span>
+                            <p>Mkc, 123 Sebastian, USA.</p>
+                        </li>
+                        <li>
+                            <span class="material-icons-outlined">
+                                drafts
+                                </span>
+                            <p>Mkc, 123 Sebastian, USA.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 footer-end">
+                    <h3>Newsletter</h3>
+                    <p>Free Delivery on your first order!</p>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input class="form-control" type="email" name="email" placeholder="Email" />
+                            <button type="submit" class="btn btn-info">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="social-icon">
+                        <h3>Follow Us on</h3>
+                        <ul class="list-icon">
+                            <li>
+                                <a href="#" class="fb">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="twt">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gg">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="brands-agile py-5">
+        <div class="container">
+            <div class="sub-some">
+                <h5 class="font-weight-bold">Mobile & Tablets :</h5>
+                <ul>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Android Phones</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Smartphones</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Feature Phones</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Unboxed Phones</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Refurbished Phones</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2"> Tablets</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">CDMA Phones</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Value Added Services</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Sell Old</a>
+                    </li>
+                    <li class="m-sm-1 ">
+                        <a href="#" class="border-right pr-2">Used Mobiles</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub-some mt-4">
+                <h5 class="font-weight-bold mb-1">Computers :</h5>
+                <ul>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Laptops </a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Printers</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Routers</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Ink & Toner Cartridges</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Monitors</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Video Games</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Unboxed & Refurbished Laptops</a>
+                    </li>
+                    <li>
+                        <a href="#" class="border-right pr-2">Assembled Desktops</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Data Cards</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub-some mt-4">
+                <h5 class="font-weight-bold mb-1">TV, Audio & Large Appliances :</h5>
+                <ul>
+                    <li class="m-sm-1">
+                        <a href="# " class="border-right pr-2">TVs & DTH</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Home Theatre Systems</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Hidden Cameras & CCTVs</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Refrigerators</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Washing Machines</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2"> Air Conditioners</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Cameras</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Speakers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub-some mt-4">
+                <h5 class="font-weight-bold mb-1">Mobile & Laptop Accessories :</h5>
+                <ul>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Headphones</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Power Banks </a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Backpacks</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Mobile Cases & Covers</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Pen Drives</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">External Hard Disks</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2"> Mouse</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Smart Watches & Fitness Bands</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">MicroSD Cards</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub-some mt-4">
+                <h5 class="font-weight-bold mb-1">Appliances :</h5>
+                <ul>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Trimmers</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Hair Dryers</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Emergency Lights</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Water Purifiers </a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Electric Kettles</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Hair Straighteners</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Induction Cooktops</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Sewing Machines</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2"> Geysers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub-some mt-4">
+                <h5 class="font-weight-bold mb-1">Popular on Electronics Mart</h5>
+                <ul>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Offers & Coupons</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Couple Watches</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Gas Stoves</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2"> Air Coolers</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Air Purifiers</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Headphones</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2"> Headsets</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Pressure Cookers</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Sandwich Makers</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Air Friers</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Irons</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">LED TV</a>
+                    </li>
+                    <li class="m-sm-1">
+                        <a href="#" class="border-right pr-2">Sandwich Makers</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //brands -->
+            <!-- payment -->
+            <div class="sub-some child-momu mt-4">
+                <h5 class="font-weight-bold mb-3">Payment Method</h5>
+                <ul>
+                    <li>
+                        <img src="../images/pay2.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/pay5.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/pay1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/pay4.png" alt="">
+                    </li>
+
+                    <html>
+                    <img src="../images/pay6.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/pay3.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/pay7.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/pay8.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/pay9.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="to-top" title="Go to top" style="display: block;">
+        <span class="fas fa-level-up-alt"></span>
+    </button>
+    <div id="mini-chat-embeded">
+        <div class="mini-chat-wrapper">
+            <div class="mini-chat-logo">
+                <div class="logo-chat-wrapper">
+                    <div class="count-msg-unread">
+                        3
+                    </div>
+                    <i class="icon-chat">
+                       <img src="../images/icons8-chat-100.png">   
+                    </i>
+                    <i class="icon-text-chat">
+                       <p>Chat</p>
+                    </i>
+                </div>
+            </div>
+            <div class="mini-chat-layout">
+                <div class="header-chat">
+                    <div class="">
+                        <i class="icon-text-chat">
+                            <p>Chat</p>
+                         </i>
+                        <div class="count-msg-unread">
+                            3
+                        </div>
+                    </div>
+                    <div class="option-chat">
+                        <div class="item-operator-wrapper">
+                            <div class="">
+                                <i class="hide-dialog">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="chat-icon"><path d="M14 1a1 1 0 011 1v12a1 1 0 01-1 1H9v-1h5V2H9V1h5zM2 13v1h1v1H2a1 1 0 01-.993-.883L1 14v-1h1zm6 1v1H4v-1h4zM2 3.999V12H1V3.999h1zm5.854 1.319l2.828 2.828a.5.5 0 010 .708l-2.828 2.828a.5.5 0 11-.708-.707L9.121 9H4.5a.5.5 0 010-1h4.621L7.146 6.025a.5.5 0 11.708-.707zM3 1v1H2v.999H1V2a1 1 0 01.883-.993L2 1h1zm5 0v1H4V1h4z"></path>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="item-operator-wrapper">
+                            <div class="">
+                                <i class="minimize-dialog">
+                                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="chat-icon"><path d="M14 1a1 1 0 011 1v12a1 1 0 01-1 1H2a1 1 0 01-1-1V2a1 1 0 011-1h12zm0 1H2v12h12V2zm-2.904 5.268l-2.828 2.828a.5.5 0 01-.707 0L4.732 7.268a.5.5 0 11.707-.707l2.475 2.475L10.39 6.56a.5.5 0 11.707.707z"></path>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-chat">
+                    <div class="logo-shop-wrapper">
+                        <div class="">
+                            <img src="../images/logo.png">
+                            <div class="text-under-logo">
+                                Xin Chào!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-chat-wrapper">
+                        <div class="search-box">
+                            <div class="search-name-customer">
+                                <div class="icon-search-wrapper">
+                                    <i class="">
+                                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="chat-icon"><g transform="translate(3 3)"><path d="M393.846 708.923c174.012 0 315.077-141.065 315.077-315.077S567.858 78.77 393.846 78.77 78.77 219.834 78.77 393.846s141.065 315.077 315.077 315.077zm0 78.77C176.331 787.692 0 611.36 0 393.845S176.33 0 393.846 0c217.515 0 393.846 176.33 393.846 393.846 0 217.515-176.33 393.846-393.846 393.846z"></path><rect transform="rotate(135 825.098 825.098)" x="785.713" y="588.79" width="78.769" height="472.615" rx="1"></rect></g></svg>
+                                    </i>
+                                </div>
+                                <input type="text" placeholder="Tìm theo tên khách hàng" id="">
+                            </div>
+                            <div class="filter">
+
+                            </div>
+                        </div>
+                        <div class="notic-warning">
+                            <div class="icon-warning">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 14" class="chat-icon"><path d="M13.582 4.276a6.977 6.977 0 00-1.5-2.225A6.977 6.977 0 007.131 0a6.956 6.956 0 00-4.95 2.051A6.977 6.977 0 00.13 7.001a6.956 6.956 0 002.05 4.95A6.988 6.988 0 007.132 14c.945 0 1.863-.185 2.726-.55a6.951 6.951 0 002.224-1.5A6.988 6.988 0 0014.131 7c0-.944-.183-1.862-.549-2.724zm-6.45 6.663a.876.876 0 11.001-1.752.876.876 0 01-.002 1.752zm.875-7.004c0 .002 0 .002 0 0v.012a.793.793 0 01-.016.152l-.425 3.825a.438.438 0 01-.87.001l-.425-3.824a.793.793 0 01-.015-.152v-.034a.876.876 0 011.75 0v.02z"></path></svg>
+                                </i>
+                            </div>
+                            <div class="content-warning">
+                                <p>Để bảo vệ chính bạn, hãy bảo đảm bạn hoàn thành tất cả các giao dịch của bạn thông qua Shopee</p>
+                            </div>
+                            <div class="icon-close-warning">
+                                <i class="close-alert">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="chat-icon"><path d="M13.823 1.263a.9.9 0 111.272 1.274L9.453 8.166l5.642 5.63a.9.9 0 01-1.272 1.274L8.18 9.438 2.536 15.07a.9.9 0 01-1.181.08l-.092-.08a.9.9 0 01.001-1.274l5.641-5.63-5.64-5.629a.9.9 0 111.27-1.274L8.18 6.895z"></path></svg>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $('.navbar-toggler').click(function() {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet " href="../css/magnific-popup.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <!-- ---------------------magnific popup---------------------------- -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+            $('.popup-with-move-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-slide-bottom'
+            });
+        });
+    </script>
+    <!-- --------------------------scroll navbar-------------------- -->
+    <script>
+        $(window).on('scroll', function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 2500) {
+                $('.main-top').addClass('scrolling');
+            } else {
+                $('.main-top').removeClass('scrolling');
+            }
+        });
+    </script>
+    <!-- -------------------------TO-top------------------- -->
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
+                document.getElementById("to-top").style.display = "block";
+            } else {
+                document.getElementById("to-top").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- -------------------------hide-show-password------------------------ -->
+    <script>
+        function eyepassword() {
+            var x = document.getElementById("input-password");
+            var y = document.getElementById("eye-close");
+            var z = document.getElementById("eye-open");
+            if (x.type === "password") {
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            } else {
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        };
+    </script>
+    <!-- -----------------------Confirm-password----------------------- -->
+    <script>
+        window.onload = function() {
+            document.getElementById("password").onchange = validatePassword;
+            document.getElementById("confirm-password").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password").value;
+            var pass1 = document.getElementById("confirm-password").value;
+            if (pass1 != pass2)
+                document.getElementById("confirm-password").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("confirm-password").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>
+    <!-- -------------------no scroll on click navbar-collapse----------- -->
+
+    <!-- -------------------scroll------------------ -->
+    <script src="../js/scroll.js"></script>
+    <script src="../js/theme-change.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>
