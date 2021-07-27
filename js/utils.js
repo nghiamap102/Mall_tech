@@ -9,18 +9,17 @@ Util.addClass = function(el, className) {
     var classList = el.className.split('');
     if (el.classList) {
         el.classList.add(className[0]);
-    } else if (!Util.hasClass(el, classList[0])) {
-        el.className += " " + classList[0];
-    }
-    if (classList.length > 1) {
-        Util.addClass(el, className.slice(1).join(''));
     }
 };
 Util.removeClass = function(el, className) {
     var classList = el.className.split('');
-    if (el.classList) {
-        el.classList.remove(classList[0]);
-    } else if (Util.hasClass(el, classList[0])) {
-
+    if (el.classList)
+        el.className.remove(classList[0]);
+}
+Util.toggleClass = function(el, className, bool) {
+    if (bool) {
+        Util.addClass(el, className);
+    } else {
+        Util.removeClass(el, className);
     }
 }

@@ -1,0 +1,91 @@
+.resp-tabs-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resp-tabs-list li {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    background: gray;
+}
+
+.resp-accordion {
+    display: none;
+}
+
+.resp-tab-content {
+    display: none;
+    padding: 50px;
+}
+
+.COD h4 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.condition-inner label {
+    cursor: pointer;
+}
+
+.condition-inner span {
+    margin-left: 10px;
+}
+
+.credit label,
+.paypal label {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.credit input,
+.paypal input {
+    border: none;
+}
+
+.horizon-tab-payment button,
+.horizon-tab-payment a {
+    padding: 10px 15px;
+    margin: 15px;
+    border: none;
+    font-size: 18px;
+}
+
+.horizon-tab-payment button:hover {
+    color: rgb(250, 104, 184);
+    background: wheat;
+}
+
+.internet-banking {
+    padding: 10px;
+}
+
+.internet-banking label {
+    display: block;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.internet-banking select {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+
+.img-paying-methods img {
+    width: 50%;
+}
+
+.img-paying-methods p {
+    padding: 15px;
+}
+
+.img-paying-methods a {
+    padding: 10px;
+    font-size: 14px;
+}
