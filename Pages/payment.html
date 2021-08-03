@@ -972,84 +972,79 @@
                     <li>Paypal Account</li>
                 </ul>
                 <div class="resp-tabs-container hor_1">
-                    <div>
-                        <div class="COD">
-                            <h4>COD</h4>
-                            <div class="check-condition">
-                                <div class="condition-inner">
-                                    <label for="checkbox-payment">
+                    <div class="COD">
+                        <h4>COD</h4>
+                        <div class="check-condition">
+                            <div class="condition-inner">
+                                <label for="checkbox-payment">
                                         <input type="checkbox"  id="checkbox-payment" >
                                         <span>We also accept Credit/Debit card on delivery. Please Check with the agent.</span>
                                     </label>
-                                </div>
                             </div>
                         </div>
-
                     </div>
-                    <div>
-                        <div class="credit">
-                            <div class="credit-card-wrapper">
-                                <form class="form-credit">
-                                    <div class="credit-card-inner">
-                                        <div class="form-group">
-                                            <label class="">Name on Card</label>
-                                            <input type="text" id="card-number-name" oninvalid="setCustomValidity('Please only fill with alphabet')" pattern="[a-zA-Z]" class="form-control" placeholder="John Smith">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="">Card Number</label>
-                                            <input class="cc-number form-control" size="19" maxlength="19" id="card-number-id" name="credit-number" type="tel" pattern="\d*" placeholder="**** **** **** **** ">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="">CVV</label>
-                                            <input type="tel" id="card-number-cvv" pattern="[0-9]" oninvalid="setCustomValidity('Chỉ cho phép điền số')" maxlength="3" placeholder="***" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="">Expiration Date</label>
-                                            <input type="date" class="form-control" placeholder="John Smith">
-                                        </div>
+
+                    <div class="credit">
+                        <div class="credit-card-wrapper">
+                            <form class="form-credit">
+                                <div class="credit-card-inner">
+                                    <div class="form-group">
+                                        <label class="">Name on Card</label>
+                                        <input type="text" id="card-number-name" oninvalid="setCustomValidity('Please only fill with alphabet')" pattern="[a-zA-Z]" class="form-control" placeholder="John Smith">
                                     </div>
-                                    <div class="btn-wrapper">
-                                        <button class="btn btn-primary">
+                                    <div class="form-group">
+                                        <label class="">Card Number</label>
+                                        <input class="cc-number form-control" size="19" maxlength="19" id="card-number-id" name="credit-number" type="tel" pattern="\d*" placeholder="**** **** **** **** ">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="">CVV</label>
+                                        <input type="tel" id="card-number-cvv" pattern="[0-9]" oninvalid="setCustomValidity('Chỉ cho phép điền số')" maxlength="3" placeholder="***" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="">Expiration Date</label>
+                                        <input type="date" class="form-control" placeholder="John Smith">
+                                    </div>
+                                </div>
+                                <div class="btn-wrapper">
+                                    <button class="btn btn-primary">
                                             Make a Payment
                                         </button>
-                                    </div>
-                                </form>
-                            </div>
+                                </div>
+                            </form>
                         </div>
-
                     </div>
-                    <div>
-                        <div class="internet-banking">
-                            <div class="banking-wrapper">
-                                <form class="form-banking">
-                                    <div class="form-group">
-                                        <h4>Select From Popular Banks</h4>
-                                        <ul>
-                                            <label>
+
+                    <div class="internet-banking">
+                        <div class="banking-wrapper">
+                            <form class="form-banking">
+                                <div class="form-group">
+                                    <h4>Select From Popular Banks</h4>
+                                    <ul>
+                                        <label>
                                                 <input type="radio" name="radio" checked="">
                                                 <i>VIB</i>
                                             </label>
-                                            <label>
+                                        <label>
 												<input type="radio" name="radio" checked="">
 												<i>Sacombank</i>
                                             </label>
-                                            <label>
+                                        <label>
                                                 <input type="radio" name="radio" checked="">
                                                 <i>Vietinbank</i>
                                             </label>
-                                            <label>
+                                        <label>
                                                 <input type="radio" name="radio" checked="">
                                                 <i>VCB</i>
                                             </label>
-                                            <label>
+                                        <label>
                                                 <input type="radio" name="radio" checked="">
                                                 <i>BIDV</i>
                                             </label>
-                                        </ul>
-                                    </div>
-                                    <div class="form-group">
-                                        <h4>Or Select Other Bank</h4>
-                                        <select class="form-control">
+                                    </ul>
+                                </div>
+                                <div class="form-group">
+                                    <h4>Or Select Other Bank</h4>
+                                    <select class="form-control">
                                             <option value="">===Other Bank===</option>
                                             <option value="Agribank">Agribank</option>
                                             <option value="VPBank">VPBank</option>
@@ -1059,57 +1054,54 @@
                                             <option value="TPBank">TPBank</option>
                                             <option value="MB Bank">MB Bank</option>
                                         </select>
-                                    </div>
-                                    <button class="btn btn-primary">
+                                </div>
+                                <button class="btn btn-primary">
                                         Pay Now
                                     </button>
-                                </form>
-                            </div>
+                            </form>
                         </div>
                     </div>
-                    <div>
-                        <div class="paypal">
-                            <div class="paypal-wrapper">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="img-paying-methods">
-                                            <img src="../images/paypal.png" alt="paypal">
-                                            <p class="text-center">Important: You will be redirected to PayPal's website to securely complete your payment.
-                                            </p>
-                                            <div class="btn-paypal">
-                                                <a href="#" class="btn btn-primary">
+                    <div class="paypal">
+                        <div class="paypal-wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="img-paying-methods">
+                                        <img src="../images/paypal.png" alt="paypal">
+                                        <p class="text-center">Important: You will be redirected to PayPal's website to securely complete your payment.
+                                        </p>
+                                        <div class="btn-paypal">
+                                            <a href="#" class="btn btn-primary">
                                                     Checkout with Paypal
                                                 </a>
-                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <form class="form-paypal">
-                                            <div class="credit-card-inner">
-                                                <div class="form-group">
-                                                    <label class="">Card Holder</label>
-                                                    <input type="text" id="card-number-name2" oninvalid="setCustomValidity('Please only fill with alphabet')" pattern="[a-zA-Z]" class="form-control" placeholder="John Smith">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="">Card Number</label>
-                                                    <input class="cc-number form-control" size="19" maxlength="19" id="card-number-id2" name="credit-number" type="tel" pattern="\d*" placeholder="**** **** **** **** ">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="">CVV</label>
-                                                    <input type="tel" id="card-number-cvv2" pattern="[0-9]" oninvalid="setCustomValidity('Chỉ cho phép điền số')" maxlength="3" placeholder="***" class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="">Valid Thru</label>
-                                                    <input type="date" class="form-control">
-                                                </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <form class="form-paypal">
+                                        <div class="credit-card-inner">
+                                            <div class="form-group">
+                                                <label class="">Card Holder</label>
+                                                <input type="text" id="card-number-name2" oninvalid="setCustomValidity('Please only fill with alphabet')" pattern="[a-zA-Z]" class="form-control" placeholder="John Smith">
                                             </div>
-                                            <div class="btn-wrapper">
-                                                <button class="btn btn-primary">
+                                            <div class="form-group">
+                                                <label class="">Card Number</label>
+                                                <input class="cc-number form-control" size="19" maxlength="19" id="card-number-id2" name="credit-number" type="tel" pattern="\d*" placeholder="**** **** **** **** ">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="">CVV</label>
+                                                <input type="tel" id="card-number-cvv2" pattern="[0-9]" oninvalid="setCustomValidity('Chỉ cho phép điền số')" maxlength="3" placeholder="***" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="">Valid Thru</label>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="btn-wrapper">
+                                            <button class="btn btn-primary">
                                                     Make a Payment
                                                 </button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

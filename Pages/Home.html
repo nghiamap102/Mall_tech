@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row py-2">
 
-                <div class="col-lg-3 col-sm-3 logo">
+                <div class="col-lg-3 col-sm-3 logo-home">
                     <p>WELCOME TO OUR SHOP!</p>
                 </div>
                 <div class="col-lg-9 col-sm-9 dialog-option">
@@ -726,7 +726,7 @@
             </div>
         </div>
     </div>
-    <div class="navbar-inner  py-2">
+    <div class="navbar-inner py-2">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="navi-search">
@@ -2224,15 +2224,19 @@
         </div>
     </div>
 
-    <button onclick="topFunction()" id="to-top" title="Go to top" style="display: block;">
+    <button onclick="topFunction()" id="to-top" title="Go to top" style="display: none;">
         <span class="fas fa-level-up-alt"></span>
     </button>
-    <div id="mini-chat-embeded">
+    <div class="mini-chat-embeded js-cd--chat chat__empty">
         <div class="mini-chat-wrapper">
             <div class="mini-chat-logo">
                 <div class="logo-chat-wrapper">
                     <div class="count-msg-unread">
-                        3
+                        <i class="front-round-brackets">
+                            <svg viewBox="0 0 3 12" xmlns="http://www.w3.org/2000/svg" class="chat-icon"><path d="M2.788 12L3 11.383c-.514-.443-.959-1.113-1.335-2.013-.376-.9-.564-2.01-.564-3.333v-.074c0-1.323.189-2.434.567-3.333.378-.9.822-1.553 1.332-1.961L2.788.006 2.754 0C2.102.354 1.48 1.063.888 2.127.296 3.19 0 4.473 0 5.974v.052c0 1.505.296 2.789.888 3.85.592 1.062 1.214 1.77 1.866 2.124h.034z"></path>
+                            </svg>
+                        </i> 3
+                        <i class="back-round-brackets"><svg viewBox="0 0 3 12" xmlns="http://www.w3.org/2000/svg" class="chat-icon"><path d="M.246 12c.648-.354 1.269-1.062 1.863-2.124C2.703 8.815 3 7.531 3 6.026v-.052c0-1.501-.297-2.784-.891-3.847C1.515 1.063.894.354.246 0H.212L0 .617c.48.42.917 1.09 1.31 2.01.393.92.59 2.032.59 3.336v.074c0 1.33-.191 2.454-.573 3.37-.382.917-.824 1.575-1.327 1.976L.212 12h.034z"></path></svg></i>
                     </div>
                     <i class="icon-chat">
                        <img src="../images/icons8-chat-100.png">   
@@ -2241,40 +2245,41 @@
                        <p>Chat</p>
                     </i>
                 </div>
-            </div>
-            <div class="mini-chat-layout">
-                <div class="header-chat">
-                    <div class="">
-                        <i class="icon-text-chat">
-                            <p>Chat</p>
-                         </i>
-                        <div class="count-msg-unread">
-                            3
+                <div class="option-chat">
+                    <div class="item-operator-wrapper">
+                        <div class="">
+                            <i class="hide-dialog">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="chat-icon"><path d="M14 1a1 1 0 011 1v12a1 1 0 01-1 1H9v-1h5V2H9V1h5zM2 13v1h1v1H2a1 1 0 01-.993-.883L1 14v-1h1zm6 1v1H4v-1h4zM2 3.999V12H1V3.999h1zm5.854 1.319l2.828 2.828a.5.5 0 010 .708l-2.828 2.828a.5.5 0 11-.708-.707L9.121 9H4.5a.5.5 0 010-1h4.621L7.146 6.025a.5.5 0 11.708-.707zM3 1v1H2v.999H1V2a1 1 0 01.883-.993L2 1h1zm5 0v1H4V1h4z"></path>
+                                </svg>
+                            </i>
                         </div>
                     </div>
-                    <div class="option-chat">
-                        <div class="item-operator-wrapper">
-                            <div class="">
-                                <i class="hide-dialog">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="chat-icon"><path d="M14 1a1 1 0 011 1v12a1 1 0 01-1 1H9v-1h5V2H9V1h5zM2 13v1h1v1H2a1 1 0 01-.993-.883L1 14v-1h1zm6 1v1H4v-1h4zM2 3.999V12H1V3.999h1zm5.854 1.319l2.828 2.828a.5.5 0 010 .708l-2.828 2.828a.5.5 0 11-.708-.707L9.121 9H4.5a.5.5 0 010-1h4.621L7.146 6.025a.5.5 0 11.708-.707zM3 1v1H2v.999H1V2a1 1 0 01.883-.993L2 1h1zm5 0v1H4V1h4z"></path>
-                                    </svg>
-                                </i>
-                            </div>
-                        </div>
-                        <div class="item-operator-wrapper">
-                            <div class="">
-                                <i class="minimize-dialog">
-                                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="chat-icon"><path d="M14 1a1 1 0 011 1v12a1 1 0 01-1 1H2a1 1 0 01-1-1V2a1 1 0 011-1h12zm0 1H2v12h12V2zm-2.904 5.268l-2.828 2.828a.5.5 0 01-.707 0L4.732 7.268a.5.5 0 11.707-.707l2.475 2.475L10.39 6.56a.5.5 0 11.707.707z"></path>
-                                    </svg>
-                                </i>
-                            </div>
+                    <div class="item-operator-wrapper">
+                        <div class="">
+                            <i class="minimize-dialog">
+                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="chat-icon"><path d="M14 1a1 1 0 011 1v12a1 1 0 01-1 1H2a1 1 0 01-1-1V2a1 1 0 011-1h12zm0 1H2v12h12V2zm-2.904 5.268l-2.828 2.828a.5.5 0 01-.707 0L4.732 7.268a.5.5 0 11.707-.707l2.475 2.475L10.39 6.56a.5.5 0 11.707.707z"></path>
+                                </svg>
+                            </i>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="mini-chat-layout">
+                <!-- <div class="header-chat">
+                    <div class="index-logo">
+                        <i class="icon-text-chat">
+                            <p>Chat</p>
+                         </i>
+                        <div class="count-msg-unread-layout">
+                            (3)
+                        </div>
+                    </div>
+                    
+                </div> -->
                 <div class="body-chat">
                     <div class="logo-shop-wrapper">
-                        <div class="">
-                            <img src="../images/logo.png">
+                        <div class="logo">
+                            <img src="../images/logo.jpg">
                             <div class="text-under-logo">
                                 Xin Chào!
                             </div>
@@ -2443,6 +2448,16 @@
 
             });
     </script> -->
+    <script>
+        $('.mini-chat-logo').on('click', function() {
+            $('.mini-chat-embeded').toggleClass('cd-chat--open');
+        });
+    </script>
+    <script>
+        $('.icon-close-warning').on('click', function() {
+            $('.mini-chat-embeded').removeClass('cd-chat--open');
+        });
+    </script>
     <script src="../js/scroll.js"></script>
     <script src="../js/theme-change.js"></script>
     <script src="../js/utils.js"></script>
